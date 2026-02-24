@@ -2,11 +2,73 @@
 @import url('https://fonts.cdnfonts.com/css/ov-soge');
 @import url('https://fonts.cdnfonts.com/css/uncut-sans');
 @import url('https://fonts.cdnfonts.com/css/inter');
+@import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
+@import url('https://fonts.cdnfonts.com/css/quicksand');
+
+/* Custom primary color as CSS variable */
+@theme {
+  --color-primary: #80AB85;
+}
 
 /* Custom base styles */
 @layer base {
-  body {
-    @apply font-sans;
+  
+  
+  /* Heading font - OV Soge */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'OV Soge', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  }
+  
+  /* Body text and buttons - Uncut Sans */
+  body, p, span, button, a, input, textarea, select, li {
+    font-family: 'Uncut Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  }
+}
+
+/* Reusable primary color utility classes */
+@layer utilities {
+  /* Background utilities */
+  .bg-primary {
+    background-color: #80AB85;
+  }
+  
+  /* Text utilities */
+  .text-primary {
+    color: #80AB85;
+  }
+  
+  /* Border utilities */
+  .border-primary {
+    border-color: #80AB85;
+  }
+  
+  /* Hover background utility */
+  .hover\:bg-primary:hover {
+    background-color: #80AB85;
+  }
+  
+  /* Hover text utility */
+  .hover\:text-primary:hover {
+    color: #80AB85;
+  }
+  
+  /* Button primary - complete button style */
+  .btn-primary {
+    background-color: #80AB85;
+    color: white;
+    border: 1px solid #80AB85;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-family: 'Uncut Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #6a9a70;
+    border-color: #6a9a70;
   }
 }
 

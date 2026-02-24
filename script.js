@@ -16,6 +16,7 @@ function showTab(index) {
   });
 }
 
+
 // FAQ Accordion functionality
 document.addEventListener('DOMContentLoaded', function() {
   // Get all FAQ items by looking for divs with the specific styling
