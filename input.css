@@ -2,12 +2,11 @@
 @import url('https://fonts.cdnfonts.com/css/ov-soge');
 @import url('https://fonts.cdnfonts.com/css/uncut-sans');
 @import url('https://fonts.cdnfonts.com/css/inter');
-@import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
-@import url('https://fonts.cdnfonts.com/css/quicksand');
 
 /* Custom primary color as CSS variable */
 @theme {
   --color-primary: #80AB85;
+  --color-main: #BF8079;
 }
 
 /* Custom base styles */
@@ -16,12 +15,12 @@
   
   /* Heading font - OV Soge */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'OV Soge', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-family: 'OV Soge';
   }
   
   /* Body text and buttons - Uncut Sans */
   body, p, span, button, a, input, textarea, select, li {
-    font-family: 'Uncut Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Uncut Sans';
   }
 }
 
@@ -40,6 +39,27 @@
   /* Border utilities */
   .border-primary {
     border-color: #80AB85;
+  }
+  
+  /* Main color utilities */
+  .bg-main {
+    background-color: #BF8079;
+  }
+  
+  .text-main {
+    color: #BF8079;
+  }
+  
+  .border-main {
+    border-color: #BF8079;
+  }
+  
+  .hover\:bg-main:hover {
+    background-color: #BF8079;
+  }
+  
+  .hover\:text-main:hover {
+    color: #BF8079;
   }
   
   /* Hover background utility */
