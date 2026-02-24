@@ -26,18 +26,95 @@
     <nav class="hidden md:flex items-center gap-6">
       <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors">Home</a>
       
-      <!-- Dropdown -->
-      <div class="relative group">
-        <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors flex items-center gap-1">
-          Services 
-          <img src="images/dropdown.svg" alt="dropdown" class="w-4 h-4">
-        </a>
-        <!-- Dropdown Content -->
-        <div class="absolute top-full left-0 bg-white border border-gray-200 min-w-[150px] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-          <a href="#" class="block px-4 py-2.5 text-gray-700 no-underline hover:bg-gray-100 transition-colors">Psychiatry</a>
-          <a href="#" class="block px-4 py-2.5 text-gray-700 no-underline hover:bg-gray-100 transition-colors">Addiction</a>
-          <a href="#" class="block px-4 py-2.5 text-gray-700 no-underline hover:bg-gray-100 transition-colors">Therapy</a>
+    <!-- SERVICES MEGA -->
+      <div class="group">
+
+  <!-- NAV LINK -->
+  <div class="flex items-center gap-1 cursor-pointer">
+    <span class="font-medium text-lg text-[#1E1E1E] hover:text-[#D0A093]">
+      Services
+    </span>
+    <img src="images/dropdown.svg" class="w-4 h-4">
+  </div>
+
+  <!-- FULL WIDTH PANEL -->
+  <div class="fixed left-0 top-[115px] mt-16 w-full 
+              opacity-0 invisible
+              group-hover:opacity-100 group-hover:visible
+              transition duration-300 z-40">
+
+    <!-- CENTERED CONTENT -->
+    <div class="max-w-[1260px] mx-auto px-6">
+
+      <div class="bg-[#FFFFFF] rounded-2xl shadow-xl p-10">
+
+        <div class="grid grid-cols-[260px_1fr_1fr_1fr] gap-12">
+
+          <!-- BLOG CARD -->
+          <div>
+            <img src="images/blog-image.svg"
+                 class="w-full h-[200px] object-cover rounded-xl">
+
+            <h3 class="mt-4 font-semibold text-lg">Blogs</h3>
+
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Read expert insights, self-care tips and guidance to support your mental health
+            </p>
+          </div>
+
+
+          <!-- COL 1 -->
+          <div>
+            <h3 class="font-semibold mb-4">Mental Health Disorder</h3>
+
+            <div class="flex flex-col gap-1">
+
+              <a class="megaLink">ADHD / ADD</a>
+              <a class="megaLink">Anxiety</a>
+              <a class="megaLink">Depression</a>
+              <a class="megaLink">Bipolar disorder</a>
+              <a class="megaLink">Insomnia and sleep difficulties</a>
+              <a class="megaLink">Eating Disorder</a>
+              <a class="megaLink">Personality disorders</a>
+              <a class="megaLink">Psychosis</a>
+              <a class="megaLink">PTSD</a>
+
+            </div>
+          </div>
+
+
+          <!-- COL 2 -->
+          <div>
+            <h3 class="font-semibold mb-4">Addiction & Substance Use</h3>
+
+            <div class="flex flex-col gap-1">
+              <a class="megaLink">Addiction</a>
+              <a class="megaLink">Drug Addiction and Substance Abuse</a>
+              <a class="megaLink">Drug Use and Addiction</a>
+              <a class="megaLink">Alcohol Addiction</a>
+              <a class="megaLink">Gambling Addiction</a>
+              <a class="megaLink">Driving Card Cases and Follow-up</a>
+            </div>
+          </div>
+
+
+          <!-- COL 3 -->
+          <div>
+            <h3 class="font-semibold mb-4">Therapy</h3>
+
+            <div class="flex flex-col gap-1">
+              <a class="megaLink">Individual therapy</a>
+              <a class="megaLink">Cognitive therapy</a>
+              <a class="megaLink">Couples therapy</a>
+              <a class="megaLink">Family Therapy</a>
+            </div>
+          </div>
+
         </div>
+
+      </div>
+    </div>
+  </div>
       </div>
       
       <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors">About us</a>
@@ -625,7 +702,7 @@
       </div>
 
       <div class="flex justify-center mt-4">
-        <button class="primary-btn w-full sm:w-auto px-8 py-4 bg-[#80AB85] text-white rounded-[10px] font-medium transition-all hover:bg-opacity-90">See our Prices</button>
+        <button class="bg-main w-full sm:w-auto px-8 py-4 bg-[#80AB85] text-white rounded-full font-medium transition-all hover:bg-opacity-90">See our Prices</button>
       </div>
     </div>
   </div>
@@ -647,7 +724,7 @@
 
         <!-- FAQ Item -->
         <div class="border-b border-gray-200 bg-[#FDF3E8] rounded-xl p-4">
-          <button class="w-full flex justify-between items-center text-left bg-transparent border-none cursor-pointer p-4">
+          <button class="w-full flex justify-between text-left bg-transparent border-none cursor-pointer p-4">
             <span class="font-['OV_Soge'] font-medium text-xl leading-none text-[#1E1E1E]">What is the difference between a psychologist vs psychiatrist?</span>
             <div class="w-7 h-7 text-[30px] font-light text-[#1E1E1E]">+</div>
           </button>
@@ -661,7 +738,7 @@
         </div>
 
         <div class="border-b border-gray-200 bg-[#FDF3E8] rounded-xl p-4">
-          <button class="w-full flex justify-between items-center text-left bg-transparent border-none cursor-pointer p-4">
+          <button class="w-full flex justify-between text-left bg-transparent border-none cursor-pointer p-4">
             <span class="font-['OV_Soge'] font-medium text-xl leading-none text-[#1E1E1E]">How do we help you?</span>
             <div class="w-7 h-7 text-[30px] font-light text-[#1E1E1E]">+</div>
           </button>
@@ -671,7 +748,7 @@
         </div>
 
         <div class="border-b border-gray-200 bg-[#FDF3E8] rounded-xl p-4">
-          <button class="w-full flex justify-between items-center text-left bg-transparent border-none cursor-pointer p-4">
+          <button class="w-full flex justify-between text-left bg-transparent border-none cursor-pointer p-4">
             <span class="font-['OV_Soge'] font-medium text-xl leading-none text-[#1E1E1E]">Our expert psychiatrist for you?</span>
             <div class="w-7 h-7 text-[30px] font-light text-[#1E1E1E]">+</div>
           </button>
@@ -681,7 +758,7 @@
         </div>
 
         <div class="border-b border-gray-200 bg-[#FDF3E8] rounded-xl p-4">
-          <button class="w-full flex justify-between items-center text-left bg-transparent border-none cursor-pointer p-4">
+          <button class="w-full flex justify-between text-left bg-transparent border-none cursor-pointer p-4">
             <span class="font-['OV_Soge'] font-medium text-xl leading-none text-[#1E1E1E]">Should I see a psychologist or psychiatrist?</span>
             <div class="w-7 h-7 text-[30px] font-light text-[#1E1E1E]">+</div>
           </button>
@@ -691,7 +768,7 @@
         </div>
 
         <div class="border-b border-gray-200 bg-[#FDF3E8] rounded-xl p-4">
-          <button class="w-full flex justify-between items-center text-left bg-transparent border-none cursor-pointer p-4">
+          <button class="w-full flex justify-between text-left bg-transparent border-none cursor-pointer p-4">
             <span class="font-['OV_Soge'] font-medium text-xl leading-none text-[#1E1E1E]">Can you see a psychiatrist without a referral?</span>
             <div class="w-7 h-7 text-[30px] font-light text-[#1E1E1E]">+</div>
           </button>

@@ -104,3 +104,14 @@
   }
 }
 
+.megaLink{
+  padding:6px 10px;
+  border-radius:6px;
+  transition:0.2s;
+  cursor:pointer;
+  width:fit-content;
+  }
+  
+  .megaLink:hover{
+  background:#E8D4C8;
+  }
