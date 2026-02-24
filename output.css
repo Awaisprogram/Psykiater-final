@@ -1,4 +1,7 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.cdnfonts.com/css/ov-soge');
+@import url('https://fonts.cdnfonts.com/css/uncut-sans');
+@import url('https://fonts.cdnfonts.com/css/inter');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -8,8 +11,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-emerald-50: oklch(97.9% 0.021 166.113);
-    --color-emerald-400: oklch(76.5% 0.177 163.223);
-    --color-emerald-600: oklch(59.6% 0.145 163.225);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-700: oklch(37.3% 0.034 259.733);
@@ -34,12 +35,13 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --tracking-wide: 0.025em;
     --leading-tight: 1.25;
     --leading-snug: 1.375;
     --leading-normal: 1.5;
@@ -51,6 +53,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-primary: #80AB85;
     --color-main: #BF8079;
   }
 }
@@ -266,8 +269,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
   }
   .mt-auto {
     margin-top: auto;
@@ -489,6 +492,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -620,9 +626,6 @@
   }
   .border-\[\#80AB85\] {
     border-color: #80AB85;
-  }
-  .border-emerald-400 {
-    border-color: var(--color-emerald-400);
   }
   .border-gray-200 {
     border-color: var(--color-gray-200);
@@ -827,8 +830,8 @@
   .pt-9 {
     padding-top: calc(var(--spacing) * 9);
   }
-  .pt-12 {
-    padding-top: calc(var(--spacing) * 12);
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
   }
   .pt-\[60px\] {
     padding-top: 60px;
@@ -868,9 +871,9 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -966,6 +969,10 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -993,9 +1000,6 @@
   .text-\[\#C8D2C9\] {
     color: #C8D2C9;
   }
-  .text-emerald-600 {
-    color: var(--color-emerald-600);
-  }
   .text-gray-700 {
     color: var(--color-gray-700);
   }
@@ -1004,6 +1008,9 @@
   }
   .text-main {
     color: var(--color-main);
+  }
+  .text-primary {
+    color: var(--color-primary);
   }
   .text-white {
     color: var(--color-white);
@@ -1440,9 +1447,19 @@
       flex-direction: row;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
   .lg\:justify-end {
@@ -1563,6 +1580,11 @@
       font-size: 40px;
     }
   }
+  .lg\:text-\[48px\] {
+    @media (width >= 64rem) {
+      font-size: 48px;
+    }
+  }
   .lg\:leading-\[27px\] {
     @media (width >= 64rem) {
       --tw-leading: 27px;
@@ -1575,9 +1597,6 @@
     }
   }
 }
-@import url('https://fonts.cdnfonts.com/css/ov-soge');
-@import url('https://fonts.cdnfonts.com/css/uncut-sans');
-@import url('https://fonts.cdnfonts.com/css/inter');
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'OV Soge';
@@ -1724,6 +1743,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1816,6 +1839,7 @@
       --tw-gradient-to-position: 100%;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
