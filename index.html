@@ -15,7 +15,8 @@
 <!-- HEADER SECTION  -->
 <!-- ============================================== -->
 <header class="flex justify-center pt-9">
-  <div class="flex items-center justify-between w-full max-w-[1260px] gap-5 bg-white rounded-full shadow-[0px_0px_10px_0px_#00000026] py-2 px-6">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+    <div class="flex items-center justify-between w-full gap-5 bg-white rounded-full shadow-[0px_0px_10px_0px_#00000026] py-2 px-6">
     <!-- Logo -->
     <div class="flex items-center">
       <img src="images/psykiater-logo.svg" alt="Logo" class="h-12 mr-2.5">
@@ -78,146 +79,154 @@
   </button>
 </nav>
 
+
 <!-- ============================================== -->
 <!-- MAIN CONTENT SECTION -->
 <!-- ============================================== -->
 <main>
 
-<!-- ============================================== -->
-<!-- HERO SECTION (Tailwind CSS) -->
-<!-- ============================================== -->
-  <section id="hero-section" class="bg-gradient-to-b from-white/80 to-[#EAD3CA] flex justify-center lg:h-[710px]">
-    <div class="w-full max-w-[1000px] pt-12 flex flex-col gap-9 px-4">
-      <!-- Hero Text Section -->
-      <div class="flex flex-col gap-6">
-        <h2 class="font-['OV_Soge'] font-semibold text-5xl leading-none text-center text-[#A35D55] m-0">
-          Psykiater Online
-        </h2>
-        <p class="font-['Uncut_Sans'] font-normal text-xl leading-none text-center text-[#333333]">
-          We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide
-          range of mental health and addiction conditions. You can access us online, by phone, or in person.
-        </p>
-        
-        <!-- Search Bar -->
-        <div class="flex justify-center">
-          <div class="relative w-full max-w-[650px]">
-            <input 
-              type="text" 
-              placeholder="Search for symptoms"
-              class="w-full h-12 bg-white rounded-md border-none shadow-[0px_0px_20px_0px_#0000001A] px-8 py-2.5 text-base placeholder:text-[#C6C6C6] font-['Uncut_Sans']"
-            >
-            <img 
-              src="images/hero-search-icon.svg" 
-              alt="search"
-              class="absolute right-4 top-1/2 -translate-y-1/2 w-7 h-7"
-            >
+  <!-- ============================================== -->
+  <!-- HERO SECTION (Tailwind CSS) -->
+  <!-- ============================================== -->
+    <section id="hero-section" class="bg-gradient-to-b from-white/80 to-[#EAD3CA] flex justify-center lg:h-[710px]">
+      <div class="w-full max-w-[1000px] pt-12 flex flex-col gap-9 px-4">
+        <!-- Hero Text Section -->
+        <div class="flex flex-col gap-6">
+          <h2 class="font-['OV_Soge'] font-semibold text-5xl leading-none text-center text-[#A35D55] m-0">
+            Psykiater Online
+          </h2>
+          <p class="font-['Uncut_Sans'] font-normal text-xl leading-none text-center text-[#333333]">
+            We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide
+            range of mental health and addiction conditions. You can access us online, by phone, or in person.
+          </p>
+          
+          <!-- Search Bar -->
+          <div class="flex justify-center">
+            <div class="relative w-full max-w-[650px]">
+              <input 
+                type="text" 
+                placeholder="Search for symptoms"
+                class="w-full h-12 bg-white rounded-md border-none shadow-[0px_0px_20px_0px_#0000001A] px-8 py-2.5 text-base placeholder:text-[#C6C6C6] font-['Uncut_Sans']"
+              >
+              <img 
+                src="images/hero-search-icon.svg" 
+                alt="search"
+                class="absolute right-4 top-1/2 -translate-y-1/2 w-7 h-7"
+              >
+            </div>
+          </div>
+          
+          <!-- Hero Icon List -->
+          <div class="flex flex-wrap gap-3 justify-center">
+            <div class="flex items-center gap-2.5">
+              <img src="images/hero-icon.svg" alt="icon" class="w-5">
+              <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Experienced psychiatrist</p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <img src="images/hero-icon.svg" alt="icon" class="w-5">
+              <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Easy online ordering</p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <img src="images/hero-icon.svg" alt="icon" class="w-5">
+              <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Short waiting time</p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <img src="images/hero-icon.svg" alt="icon" class="w-5">
+              <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">No referral</p>
+            </div>
+          </div>
+          
+          <!-- Hero Buttons -->
+          <div class="flex flex-wrap gap-4 justify-center">
+            <button class="px-6 py-3.5 rounded-[54px] border-none bg-[#BF8079] font-['Uncut_Sans'] font-medium text-lg text-white cursor-pointer hover:bg-[#a87068] transition-colors">
+              Meeting in Oslo & Skiing
+            </button>
+            <button class="px-6 py-3.5 rounded-[54px] border-none bg-[#97B099] font-['Uncut_Sans'] font-medium text-lg text-white cursor-pointer hover:bg-[#859a88] transition-colors">
+              Video consultation
+            </button>
           </div>
         </div>
         
-        <!-- Hero Icon List -->
-        <div class="flex flex-wrap gap-3 justify-center">
-          <div class="flex items-center gap-2.5">
-            <img src="images/hero-icon.svg" alt="icon" class="w-5">
-            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Experienced psychiatrist</p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <img src="images/hero-icon.svg" alt="icon" class="w-5">
-            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Easy online ordering</p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <img src="images/hero-icon.svg" alt="icon" class="w-5">
-            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Short waiting time</p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <img src="images/hero-icon.svg" alt="icon" class="w-5">
-            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">No referral</p>
-          </div>
-        </div>
-        
-        <!-- Hero Buttons -->
-        <div class="flex flex-wrap gap-4 justify-center">
-          <button class="px-6 py-3.5 rounded-[54px] border-none bg-[#BF8079] font-['Uncut_Sans'] font-medium text-lg text-white cursor-pointer hover:bg-[#a87068] transition-colors">
-            Meeting in Oslo & Skiing
-          </button>
-          <button class="px-6 py-3.5 rounded-[54px] border-none bg-[#97B099] font-['Uncut_Sans'] font-medium text-lg text-white cursor-pointer hover:bg-[#859a88] transition-colors">
-            Video consultation
-          </button>
-        </div>
+        <!-- Hero Image -->
+        <img 
+          src="images/hero-img.jpg" 
+          alt="Hero" 
+          class="w-full max-w-[1050px] h-[430px] rounded-xl object-cover"
+        >
       </div>
-      
-      <!-- Hero Image -->
-      <img 
-        src="images/hero-img.jpg" 
-        alt="Hero" 
-        class="w-full max-w-[1000px] h-[430px] rounded-xl object-cover"
-      >
-    </div>
-  </section>
+    </section>
 
 <!-- ============================================== -->
 <!-- MARQUEE SECTION (Tailwind CSS) -->
 <!-- ============================================== -->
-  <section id="marquee-section" class="mt-40">
+<section id="marquee-section" class="mt-40">
+  <div>
     <div class="bg-[#BF8079] w-full h-14 overflow-hidden whitespace-nowrap flex items-center box-border py-2.5">
       <span class="font-['Uncut_Sans'] font-normal text-2xl leading-[27px] text-white inline-block pl-full animate-[scroll_20s_linear_infinite]">
         <a href="#" class="text-white no-underline">Psykiater.no</a> er en av Norges ledende private psykiatriske klinikker, som tilbyr behandling
         over hele landet gjennom fysiske klinikker og videokonsultasjoner.
       </span>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- WHO SECTION (Tailwind CSS) -->
 <!-- ============================================== -->
-  <section id="who" class="flex justify-center py-20">
-    <div class="w-full max-w-[1260px] flex flex-col gap-8 px-4">
-      <!-- Who Text -->
-      <div class="flex flex-col gap-4">
-        <!-- Who We Are Badge -->
-        <div class="bg-[#E5F9E8] px-2 py-2 rounded w-fit">
-          <h3 class="font-['OV_Soge'] font-medium text-lg text-[#97B099] m-0">Who We Are?</h3>
-        </div>
-        <!-- Main Heading -->
-        <h4 class="font-['Uncut_Sans'] font-medium text-[30px] leading-none text-[#1E1E1E]">
-          Psykiater.no is a private psychiatric clinic offering fast access to psychiatrists, psychologists, and
-          specialists in addiction medicine. We help individuals, companies, non-profits, and public sector clients.
-          We provide flexible care through secure video or telephone consultations, as well as in-person visits in
-          Oslo and Ski.
-        </h4>
+<section id="who" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      
+      <!-- Top Section -->
+      <div class="mb-8">
+          <!-- Badge -->
+          <div class="inline-block bg-emerald-50 px-4 py-2 rounded-lg mb-4">
+              <span class="font-medium text-[16px] text-emerald-600">Who We Are?</span>
+          </div>
+          
+          <!-- Main Text -->
+          <p class="text-gray-800 text-lg lg:text-[28px] leading-relaxed ">
+              Psykiater.no is a private psychiatric clinic offering fast access to psychiatrists, psychologists, and specialists in addiction medicine. We help individuals, companies, non-profits, and public sector clients. We provide flexible care through secure video or telephone consultations, as well as in-person visits in Oslo and Ski.
+          </p>
       </div>
       
-      <!-- Service Tags -->
-      <div class="flex gap-5 flex-wrap">
-        <!-- Tag 1 -->
-        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
-          <img src="images/service-tag-icon (2).svg" alt="" class="w-8 h-8">
-          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">Private individuals</p>
-        </div>
-        <!-- Tag 2 -->
-        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
-          <img src="images/service-tag-icon (3).svg" alt="" class="w-8 h-8">
-          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">Companies</p>
-        </div>
-        <!-- Tag 3 -->
-        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
-          <img src="images/service-tag-icon (4).svg" alt="" class="w-8 h-8">
-          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">Non-profit organizations</p>
-        </div>
-        <!-- Tag 4 -->
-        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
-          <img src="images/service-tag-icon (1).svg" alt="" class="w-8 h-8">
-          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">The public sector</p>
-        </div>
+      <!-- Service Tags Row -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Tag 1 -->
+          <div class="flex items-center gap-3 p-4 rounded-lg border-l-4 border-emerald-400 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <img src="images/service-tag-icon (2).svg" alt="Private individuals" class="w-8 h-8 flex-shrink-0">
+              <span class="font-medium text-base text-gray-800">Private individuals</span>
+          </div>
+          
+          <!-- Tag 2 -->
+          <div class="flex items-center gap-3 p-4 rounded-lg border-l-4 border-emerald-400 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <img src="images/service-tag-icon (3).svg" alt="Companies" class="w-8 h-8 flex-shrink-0">
+              <span class="font-medium text-base text-gray-800">Companies</span>
+          </div>
+          
+          <!-- Tag 3 -->
+          <div class="flex items-center gap-3 p-4 rounded-lg border-l-4 border-emerald-400 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <img src="images/service-tag-icon (4).svg" alt="Non-profit organizations" class="w-8 h-8 flex-shrink-0">
+              <span class="font-medium text-base text-gray-800">Non-profit organizations</span>
+          </div>
+          
+          <!-- Tag 4 -->
+          <div class="flex items-center gap-3 p-4 rounded-lg border-l-4 border-emerald-400 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <img src="images/service-tag-icon (1).svg" alt="The public sector" class="w-8 h-8 flex-shrink-0">
+              <span class="font-medium text-base text-gray-800">The public sector</span>
+          </div>
+          
       </div>
-    </div>
-  </section>
+      
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- SUPPORT SECTION -->
 <!-- ============================================== -->
-  <section id="support-section" class="bg-[#E6F2E7] flex justify-center py-[60px]">
-    <div class="section-content support w-full max-w-[1260px] flex flex-col justify-center items-center gap-[60px] px-4">
-      <div class="tabs flex gap-[10px] p-[10px] rounded-[12px] bg-white w-fit">
+<section id="support-section" class="bg-[#E6F2E7] flex justify-center py-[60px]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col justify-center items-center gap-[60px]">
+    <div class="tabs flex gap-[10px] p-[10px] rounded-[12px] bg-white w-fit">
         <button class="tab text-white bg-[#80AB85] border border-[#80AB85] rounded-[10px] font-['Uncut_Sans'] font-medium text-lg px-6 py-3 cursor-pointer" onclick="showTab(0)">Mental Health Disorder</button>
         <button class="tab text-[#80AB85] bg-white rounded-[10px] font-['Uncut_Sans'] font-medium text-lg px-6 py-3 cursor-pointer hover:text-white hover:bg-[#80AB85] transition-colors" onclick="showTab(1)">Addiction & Substance Use</button>
         <button class="tab text-[#80AB85] bg-white rounded-[10px] font-['Uncut_Sans'] font-medium text-lg px-6 py-3 cursor-pointer hover:text-white hover:bg-[#80AB85] transition-colors" onclick="showTab(2)">Therapy</button>
@@ -296,9 +305,9 @@
 <!-- ============================================== -->
 <!-- BOOKING SECTION -->
 <!-- ============================================== -->
-  <section id="booking-section" class="flex justify-center py-[100px]">
-    <div class="w-full max-w-[1260px] px-4">
-      <div class="flex gap-[25px]">
+<section id="booking-section" class="py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex gap-[25px]">
         <div class="flex flex-col items-center w-full p-[30px_15px] rounded-[10px] gap-[11px] shadow-[0px_0px_30px_0px_#0000001A]">
           <img src="images/booking-icon (1).svg" alt="" class="w-[70px] h-[70px]">
           <h3 class="font-['OV_Soge'] font-medium text-xl text-center text-[#1E1E1E]">Book an Appointment</h3>
@@ -321,13 +330,13 @@
 <!-- ============================================== -->
 <!-- MISSION SECTION -->
 <!-- ============================================== -->
-  <section id="mission-section" class="flex justify-center pb-[120px]">
-    <div class="w-full max-w-[1260px] px-4">
-      <div class="bg-gradient-to-r from-[#BCCFBE] via-[#80AB85] to-[#BCCFBE] p-10 rounded-[20px] flex flex-col gap-[10px] relative overflow-hidden">
+<section id="mission-section" class="py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="bg-gradient-to-r from-[#BCCFBE] via-[#80AB85] to-[#BCCFBE] p-18 rounded-[20px] flex flex-col gap-[10px] relative overflow-hidden">
         <div class="bg-[#D8ECDA] px-2 py-1 rounded w-fit">
           <span class="font-['OV_Soge'] font-medium text-lg text-[#506553]">Mission Statement</span>
         </div>
-        <h4 class="font-['Uncut_Sans'] font-medium text-[30px] leading-none text-white">Founded on the principle that mental health care should be as accessible as any other medical service.
+        <h4 class="font-['Uncut_Sans'] font-medium text-[30px] leading-none text-white tracking-relaxed">Founded on the principle that mental health care should be as accessible as any other medical service.
           Psykiater.no was created to bridge the gap between those seeking help and the specialists who can provide it.
           The traditional mental health services often involve long waiting times, complex referral processes, and
           limited options. Our mission is simple: provide fast access to board-certified psychiatrists and addiction
@@ -340,35 +349,37 @@
 <!-- ============================================== -->
 <!-- TOGETHER SECTION -->
 <!-- ============================================== -->
-  <section id="together-section" class="bg-gradient-to-b from-[#FFE8E6] to-white flex justify-center py-[60px]">
-    <div class="w-full max-w-[1260px] flex gap-[35px] px-4">
-      <img class="w-[567px] h-[483px] rounded-[10px] object-cover" src="images/togethe-img.jpg" alt="">
-      <div class="flex flex-col gap-[25px] p-[25px] rounded-[10px] bg-white shadow-[0px_0px_5px_0px_#0000000D]">
-        <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55]">What can we do together?</h2>
-        <p class="font-['Uncut_Sans'] font-normal text-[20px] leading-[27px] text-[#333333]">We offer treatment to patients struggling with all types of mental illnesses and addiction disorders. Our
-          offering extends beyond the usual services, and we provide follow-up both before and after treatment at our
-          clinics for those who wish it with our psychiatrist. We use clinically tested techniques with the goal of
-          increasing the patient's quality of life.</p>
-        <div class="flex flex-col gap-[14px]">
-          <div class="flex gap-[10px]">
-            <img class="w-5 h-5" src="images/together-icon.svg" alt="">
-            <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Relieve symptoms</span>
-          </div>
-          <div class="flex gap-[10px]">
-            <img class="w-5 h-5" src="images/together-icon.svg" alt="">
-            <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Overcoming fear</span>
-          </div>
-          <div class="flex gap-[10px]">
-            <img class="w-5 h-5" src="images/together-icon.svg" alt="">
-            <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Overcoming addiction</span>
-          </div>
-          <div class="flex gap-[10px]">
-            <img class="w-5 h-5" src="images/together-icon.svg" alt="">
-            <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Better mental health</span>
-          </div>
-          <div class="flex gap-[10px]">
-            <img class="w-5 h-5" src="images/together-icon.svg" alt="">
-            <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Improve your quality of life</span>
+  <section id="together-section" class="bg-gradient-to-b from-[#FFE8E6] to-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <img class="w-full max-w-md lg:max-w-lg xl:max-w-xl h-[483px] rounded-xl object-cover" src="images/togethe-img.jpg" alt="">
+        <div class="flex flex-col gap-[25px] p-[25px] rounded-[10px] bg-white shadow-[0px_0px_5px_0px_#0000000D]">
+          <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55]">What can we do together?</h2>
+          <p class="font-['Uncut_Sans'] font-normal text-[20px] leading-[27px] text-[#333333] max-w-xl">We offer treatment to patients struggling with all types of mental illnesses and addiction disorders. Our
+            offering extends beyond the usual services, and we provide follow-up both before and after treatment at our
+            clinics for those who wish it with our psychiatrist. We use clinically tested techniques with the goal of
+            increasing the patient's quality of life.</p>
+          <div class="flex flex-col gap-[14px]">
+            <div class="flex gap-[10px]">
+              <img class="w-5 h-5" src="images/together-icon.svg" alt="">
+              <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Relieve symptoms</span>
+            </div>
+            <div class="flex gap-[10px]">
+              <img class="w-5 h-5" src="images/together-icon.svg" alt="">
+              <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Overcoming fear</span>
+            </div>
+            <div class="flex gap-[10px]">
+              <img class="w-5 h-5" src="images/together-icon.svg" alt="">
+              <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Overcoming addiction</span>
+            </div>
+            <div class="flex gap-[10px]">
+              <img class="w-5 h-5" src="images/together-icon.svg" alt="">
+              <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Better mental health</span>
+            </div>
+            <div class="flex gap-[10px]">
+              <img class="w-5 h-5" src="images/together-icon.svg" alt="">
+              <span class="font-['Uncut_Sans'] font-medium text-lg text-[#80AB85]">Improve your quality of life</span>
+            </div>
           </div>
         </div>
       </div>
@@ -378,21 +389,22 @@
 <!-- ============================================== -->
 <!-- SPECIALIST SECTION -->
 <!-- ============================================== -->
-<section id="specialist-section" class="flex justify-center py-24">
-    <div class="section-content specialist flex gap-10">
-      <div class="profile-1 bg-[url('images/dr-rehan.png')] bg-cover rounded-[15px] w-[365px] h-[504px] flex flex-col justify-end p-[15px] gap-1.5">
+<section id="specialist-section" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="profile-1 bg-[url('images/dr-rehan.png')] bg-cover rounded-[15px] w-full h-[504px] flex flex-col justify-end p-[15px] gap-1.5">
         <h3 class="font-['OV_Soge'] font-semibold text-2xl leading-none text-white">Rehan Bin Nawaz</h3>
         <div class="profile-icon-list flex justify-between">
           <span class="font-['Uncut_Sans'] font-medium text-2xl leading-none text-[#C2BABA]">See more</span>
           <img src="images/specialist-icon.svg" alt="">
         </div>
       </div>
-      <div class="meet w-[405px] h-[504px] rounded-[15px] bg-gradient-to-r from-[#F5BFB9] to-[#BF8079] flex flex-col justify-between p-[30px_25px]">
+      <div class="meet w-full h-[504px] rounded-[15px] bg-gradient-to-r from-[#F5BFB9] to-[#BF8079] flex flex-col justify-between p-[30px_25px]">
         <h3 class="font-['OV_Soge'] font-semibold text-[32px] leading-none text-white">Meet Our Specialist</h3>
         <span class="font-['OV_Soge'] font-medium text-2xl leading-none text-white">Our specialist bring years of clinical expertise & a patient-first approach to support your mental
           wellness</span>
       </div>
-      <div class="profile-2 bg-[url('images/dr-hammad.png')] bg-cover rounded-[15px] w-[365px] h-[504px] flex flex-col justify-end p-[15px] gap-1.5">
+      <div class="profile-2 bg-[url('images/dr-hammad.png')] bg-cover rounded-[15px] w-full h-[504px] flex flex-col justify-end p-[15px] gap-1.5">
         <h3 class="font-['OV_Soge'] font-semibold text-2xl leading-none text-white">Hammad Khan</h3>
         <div class="profile-icon-list flex justify-between">
           <span class="font-['Uncut_Sans'] font-medium text-2xl leading-none text-[#C2BABA]">See more</span>
@@ -400,45 +412,44 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- ORDER SECTION -->
 <!-- ============================================== -->
-<section id="order-section" class="flex justify-center pb-[100px]">
-    <div class="section-content order w-full max-w-[1260px] flex flex-col gap-[60px]">
-      <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55]">Easy and fast ordering - Short waiting time</h2>
-
-
-      <div class="order-tabs flex justify-between">
-        <div class="steps flex flex-col gap-[60px] justify-center">
-          <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(0)">Book an Appointment</div>
-          <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(1)">Receive Documentation</div>
-          <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(2)">Pay for the Hour</div>
+<section id="order-section" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55] mb-12">Easy and fast ordering - Short waiting time</h2>
+    <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div class="flex flex-col gap-[60px]">
+        <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(0)">Book an Appointment</div>
+        <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(1)">Receive Documentation</div>
+        <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(2)">Pay for the Hour</div>
+      </div>
+      <div class="steps-content">
+        <div class="step-content p-5 w-full max-w-[470px]">
+          <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
+          <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333] max-w-xl">Simply click on "book an appointment" at the top of the page or in the bottom right corner and select a
+            consultation with a psychiatrist or specialist in substance abuse and addiction medicine.</p>
         </div>
-        <div class="steps-content">
-          <div class="step-content p-5 w-full max-w-[470px]">
-            <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5">
-            <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333]">Simply click on "book an appointment" at the top of the page or in the bottom right corner and select a
-              consultation with a psychiatrist or specialist in substance abuse and addiction medicine.</p>
-          </div>
-          <div class="step-content p-5 w-full max-w-[470px] hidden">
-            <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5">
-            <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333]">After booking, you will receive necessary documentation and confirmation details.</p>
-          </div>
-          <div class="step-content p-5 w-full max-w-[470px] hidden">
-            <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5">
-            <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333]">Complete your payment securely to confirm your consultation slot.</p>
-          </div>
+        <div class="step-content p-5 w-full max-w-[470px] hidden">
+          <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
+          <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333] max-w-xl">After booking, you will receive necessary documentation and confirmation details.</p>
+        </div>
+        <div class="step-content p-5 w-full max-w-[470px] hidden">
+          <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
+          <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333] max-w-xl">Complete your payment securely to confirm your consultation slot.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- LOCATION SECTION -->
 <!-- ============================================== -->
-<section id="location-section" class="flex justify-center pb-[120px]">
+  <section id="location-section" class="flex justify-center py-16 lg:py-24">
     <div class="section-content location w-full max-w-[1260px] bg-gradient-to-r from-[#FFECEA] to-[#F0BDB8] rounded-[20px] p-[60px_0_0_60px] flex justify-between">
       <div class="location-text flex flex-col gap-[25px] max-w-[650px]">
         <h2 class="font-['OV_Soge'] font-semibold text-[32px] leading-none text-[#A35D55]">Locations & Accessibility</h2>
@@ -474,17 +485,19 @@
       </div>
       <img class="loc-img w-auto h-auto" src="images/location-img.svg" alt="">
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- APPOINTMENT SECTION -->
 <!-- ============================================== -->
-<section id="appointment-section" class="flex justify-center py-16">
-    <div class="section-content appointment w-full max-w-[1260px] px-4 flex flex-col gap-12">
+<section id="appointment-section" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex flex-col gap-12">
       <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-center text-[#A35D55]">Book an Appointment & Check Prices</h2>
-      <div class="flex flex-wrap gap-5 justify-center">
+      <div class="flex gap-5 justify-center">
         <div class="bg-[#E6F2E7] rounded-[10px] p-5 flex flex-col gap-6 w-full max-w-[400px]">
-          <img src="images/appoint-img (1).jpg" alt="" class="w-full rounded-lg">
+          <img src="images/appoint-img (1).jpg" alt="" class="w-full rounded-lg max-w-md lg:max-w-lg xl:max-w-xl">
           <div class="flex flex-col gap-4">
             <h3 class="font-['OV_Soge'] font-medium text-xl leading-[26px] text-[#1E1E1E]">Student Consultation</h3>
             <p class="font-['Uncut_Sans'] font-normal text-lg leading-5 text-[#1E1E1E]">An introductory call to help you understand psykiater.no clinics and determine if our treatments are right for you.</p>
@@ -530,7 +543,7 @@
         </div>
 
         <div class="bg-[#E6F2E7] rounded-[10px] p-5 flex flex-col gap-6 w-full max-w-[400px]">
-          <img src="images/appoint-img (2).jpg" alt="" class="w-full rounded-lg">
+          <img src="images/appoint-img (2).jpg" alt="" class="w-full rounded-lg max-w-md lg:max-w-lg xl:max-w-xl">
           <div class="flex flex-col gap-4">
             <h3 class="font-['OV_Soge'] font-medium text-xl leading-[26px] text-[#1E1E1E]">Video consultation</h3>
             <p class="font-['Uncut_Sans'] font-normal text-lg leading-5 text-[#1E1E1E]">A secure online consultation offering the same professional care and confidentiality as an in-person visit.</p>
@@ -558,7 +571,7 @@
         </div>
 
         <div class="bg-[#E6F2E7] rounded-[10px] p-5 flex flex-col gap-6 w-full max-w-[400px]">
-          <img src="images/appoint-img (3).jpg" alt="" class="w-full rounded-lg">
+          <img src="images/appoint-img (3).jpg" alt="" class="w-full rounded-lg max-w-md lg:max-w-lg xl:max-w-xl">
           <div class="flex flex-col gap-4">
             <h3 class="font-['OV_Soge'] font-medium text-xl leading-[26px] text-[#1E1E1E]">In-Clinic Consultation (Oslo or Ski)</h3>
             <p class="font-['Uncut_Sans'] font-normal text-lg leading-5 text-[#1E1E1E]">A face-to-face consultation providing comprehensive assessment, treatment planning, and professional guidance tailored to your needs.</p>
@@ -589,13 +602,15 @@
         <button class="primary-btn">See our Prices</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- FAQ SECTION -->
 <!-- ============================================== -->
-  <section id="faq-section" class="flex justify-center pt-24">
-    <div class="max-w-[1000px] w-full flex flex-col gap-12 px-4">
+<section id="faq-section" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex flex-col gap-12">
       <div class="text-center flex flex-col gap-3">
         <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55]">Frequently Asked Questions</h2>
         <p class="font-['Uncut_Sans'] font-normal text-lg leading-[27px] text-center text-[#333333]">Here you can find all the help and answers you need for your mental health in one place.</p>
@@ -660,17 +675,19 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ============================================== -->
 <!-- ARTICLE SECTION -->
 <!-- ============================================== -->
-  <section id="article-section" class="py-[90px_0_150px_0] flex justify-center">
-    <div class="w-full max-w-[1260px] flex flex-col gap-12 px-4">
+<section id="article-section" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex flex-col gap-12">
       <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-center text-[#A35D55]">Articles & Resources</h2>
-      <div class="flex gap-6">
-        <div class="bg-white rounded-lg p-4 flex flex-col shadow-[0px_0px_30px_0px_#0000001F] gap-6">
-          <img src="images/blog-img (1).jpg" alt="" class="w-full rounded-lg">
+      <div class="flex gap-6 flex-wrap">
+        <div class="bg-white rounded-lg p-4 flex flex-col shadow-[0px_0px_30px_0px_#0000001F] gap-6 flex-1 min-w-[300px] max-w-[400px]">
+          <img src="images/blog-img (1).jpg" alt="" class="w-full rounded-lg max-w-md lg:max-w-lg xl:max-w-xl">
           <div class="flex flex-col gap-2">
             <div class="flex justify-between">
               <span class="font-['Uncut_Sans'] font-medium text-sm text-[#868686]">April 15, 2025</span>
@@ -683,8 +700,8 @@
           <button class="px-3 py-2 rounded-[44px] border border-[#80AB85] font-['Inter'] font-medium text-base bg-white text-[#80AB85] cursor-pointer">Les mer</button>
         </div>
 
-        <div class="bg-white rounded-lg p-4 flex flex-col shadow-[0px_0px_30px_0px_#0000001F] gap-6">
-          <img src="images/blog-img (2).jpg" alt="" class="w-full rounded-lg">
+        <div class="bg-white rounded-lg p-4 flex flex-col shadow-[0px_0px_30px_0px_#0000001F] gap-6 flex-1 min-w-[300px] max-w-[400px]">
+          <img src="images/blog-img (2).jpg" alt="" class="w-full rounded-lg max-w-md lg:max-w-lg xl:max-w-xl">
           <div class="flex flex-col gap-2">
             <div class="flex justify-between">
               <span class="font-['Uncut_Sans'] font-medium text-sm text-[#868686]">April 15, 2025</span>
@@ -697,8 +714,8 @@
           <button class="px-3 py-2 rounded-[44px] border border-[#80AB85] font-['Inter'] font-medium text-base bg-white text-[#80AB85] cursor-pointer">Les mer</button>
         </div>
 
-        <div class="bg-white rounded-lg p-4 flex flex-col shadow-[0px_0px_30px_0px_#0000001F] gap-6">
-          <img src="images/blog-img (3).jpg" alt="" class="w-full rounded-lg">
+        <div class="bg-white rounded-lg p-4 flex flex-col shadow-[0px_0px_30px_0px_#0000001F] gap-6 flex-1 min-w-[300px] max-w-[400px]">
+          <img src="images/blog-img (3).jpg" alt="" class="w-full rounded-lg max-w-md lg:max-w-lg xl:max-w-xl">
           <div class="flex flex-col gap-2">
             <div class="flex justify-between">
               <span class="font-['Uncut_Sans'] font-medium text-sm text-[#868686]">April 15, 2025</span>
@@ -715,7 +732,8 @@
         <button class="primary-btn">See more articles</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 </main>
 
