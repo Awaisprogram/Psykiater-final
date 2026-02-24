@@ -314,6 +314,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .aspect-2\/2 {
+    aspect-ratio: 2/2;
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
