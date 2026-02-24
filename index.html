@@ -141,45 +141,58 @@
   </section>
 
 <!-- ============================================== -->
-<!-- MARQUEE SECTION -->
+<!-- MARQUEE SECTION (Tailwind CSS) -->
 <!-- ============================================== -->
-  <section id="marquee-section">
-    <div class="marquee-content">
-      <span><a href="#">Psykiater.no</a> er en av Norges ledende private psykiatriske klinikker, som tilbyr behandling
-        over hele landet gjennom fysiske klinikker og videokonsultasjoner.</span>
+  <section id="marquee-section" class="mt-40">
+    <div class="bg-[#BF8079] w-full h-14 overflow-hidden whitespace-nowrap flex items-center box-border py-2.5">
+      <span class="font-['Uncut_Sans'] font-normal text-2xl leading-[27px] text-white inline-block pl-full animate-[scroll_20s_linear_infinite]">
+        <a href="#" class="text-white no-underline">Psykiater.no</a> er en av Norges ledende private psykiatriske klinikker, som tilbyr behandling
+        over hele landet gjennom fysiske klinikker og videokonsultasjoner.
+      </span>
     </div>
   </section>
 
 <!-- ============================================== -->
-<!-- WHO SECTION -->
+<!-- WHO SECTION (Tailwind CSS) -->
 <!-- ============================================== -->
-  <section id="who">
-    <div class="section-content who">
-      <div class="who-text">
-        <div class="who-we-are">
-          <h3>Who We Are?</h3>
+  <section id="who" class="flex justify-center py-20">
+    <div class="w-full max-w-[1260px] flex flex-col gap-8 px-4">
+      <!-- Who Text -->
+      <div class="flex flex-col gap-4">
+        <!-- Who We Are Badge -->
+        <div class="bg-[#E5F9E8] px-2 py-2 rounded w-fit">
+          <h3 class="font-['OV_Soge'] font-medium text-lg text-[#97B099] m-0">Who We Are?</h3>
         </div>
-        <h4>Psykiater.no is a private psychiatric clinic offering fast access to psychiatrists, psychologists, and
+        <!-- Main Heading -->
+        <h4 class="font-['Uncut_Sans'] font-medium text-[30px] leading-none text-[#1E1E1E]">
+          Psykiater.no is a private psychiatric clinic offering fast access to psychiatrists, psychologists, and
           specialists in addiction medicine. We help individuals, companies, non-profits, and public sector clients.
           We provide flexible care through secure video or telephone consultations, as well as in-person visits in
-          Oslo and Ski.</h4>
+          Oslo and Ski.
+        </h4>
       </div>
-      <div class="service-tags">
-        <div class="service-tag">
-          <img src="images/service-tag-icon (2).svg" alt="">
-          <p>Private individuals</p>
+      
+      <!-- Service Tags -->
+      <div class="flex gap-5 flex-wrap">
+        <!-- Tag 1 -->
+        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
+          <img src="images/service-tag-icon (2).svg" alt="" class="w-8 h-8">
+          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">Private individuals</p>
         </div>
-        <div class="service-tag">
-          <img src="images/service-tag-icon (3).svg" alt="">
-          <p>Companies</p>
+        <!-- Tag 2 -->
+        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
+          <img src="images/service-tag-icon (3).svg" alt="" class="w-8 h-8">
+          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">Companies</p>
         </div>
-        <div class="service-tag">
-          <img src="images/service-tag-icon (4).svg" alt="">
-          <p>Non-profit organizations</p>
+        <!-- Tag 3 -->
+        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
+          <img src="images/service-tag-icon (4).svg" alt="" class="w-8 h-8">
+          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">Non-profit organizations</p>
         </div>
-        <div class="service-tag">
-          <img src="images/service-tag-icon (1).svg" alt="">
-          <p>The public sector</p>
+        <!-- Tag 4 -->
+        <div class="flex gap-2.5 p-3 rounded-lg border-l-4 border-[#97B099] bg-white shadow-[0px_0px_15px_0px_#0000001C] w-fit max-w-[300px] items-center">
+          <img src="images/service-tag-icon (1).svg" alt="" class="w-8 h-8">
+          <p class="font-['Uncut_Sans'] font-medium text-xl text-[#333333] m-0">The public sector</p>
         </div>
       </div>
     </div>
