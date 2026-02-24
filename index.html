@@ -55,12 +55,28 @@
       </button>
     </div>
 
-    <!-- Toggle Button for Mobile -->
-    <button class="md:hidden cursor-pointer bg-transparent border-none text-2xl text-[#1E1E1E]">
+<!-- Toggle Button for Mobile -->
+    <button id="mobile-menu-btn" class="md:hidden cursor-pointer bg-transparent border-none text-2xl text-[#1E1E1E]">
       ☰
     </button>
   </div>
 </header>
+
+<!-- Mobile Navigation -->
+<nav id="mobile-nav" class="hidden fixed top-0 left-0 w-full h-screen bg-white z-50 flex-col gap-6 p-6">
+  <div class="flex justify-between items-center mb-4">
+    <img src="images/psykiater-logo.svg" alt="Logo" class="h-10">
+    <button id="mobile-close-btn" class="text-3xl">&times;</button>
+  </div>
+  <a href="#" class="font-medium text-xl text-[#1E1E1E]">Home</a>
+  <a href="#" class="font-medium text-xl text-[#1E1E1E]">Services</a>
+  <a href="#" class="font-medium text-xl text-[#1E1E1E]">About us</a>
+  <a href="#" class="font-medium text-xl text-[#1E1E1E]">Articles</a>
+  <a href="#" class="font-medium text-xl text-[#1E1E1E]">Contact us</a>
+  <button class="mt-4 px-6 py-3 rounded-[54px] bg-[#BF8079] font-medium text-lg text-white">
+    Book an Appointment
+  </button>
+</nav>
 
 <!-- ============================================== -->
 <!-- MAIN CONTENT SECTION -->
