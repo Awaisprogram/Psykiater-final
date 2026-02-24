@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psykiater Final Design</title>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="output.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============================================== -->
+<!-- HEADER SECTION  -->
+<!-- ============================================== -->
+<header class="flex justify-center pt-9">
+  <div class="flex items-center justify-between w-full max-w-[1260px] gap-5 bg-white rounded-full shadow-[0px_0px_10px_0px_#00000026] py-2 px-6">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="images/psykiater-logo.svg" alt="Logo" class="h-12 mr-2.5">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors">Home</a>
+      
+      <!-- Dropdown -->
+      <div class="relative group">
+        <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors flex items-center gap-1">
+          Services 
+          <img src="images/dropdown.svg" alt="dropdown" class="w-4 h-4">
+        </a>
+        <!-- Dropdown Content -->
+        <div class="absolute top-full left-0 bg-white border border-gray-200 min-w-[150px] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          <a href="#" class="block px-4 py-2.5 text-gray-700 no-underline hover:bg-gray-100 transition-colors">Psychiatry</a>
+          <a href="#" class="block px-4 py-2.5 text-gray-700 no-underline hover:bg-gray-100 transition-colors">Addiction</a>
+          <a href="#" class="block px-4 py-2.5 text-gray-700 no-underline hover:bg-gray-100 transition-colors">Therapy</a>
+        </div>
+      </div>
+      
+      <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors">About us</a>
+      <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors">Articles</a>
+      <a href="#" class="font-medium text-lg text-[#1E1E1E] no-underline hover:text-[#D0A093] transition-colors">Contact us</a>
+    </nav>
+
+    <!-- Currency + Button -->
+    <div class="flex items-center gap-5">
+      <div class="flex items-center gap-1.5 font-medium text-base text-[#1E1E1E]">
+        <img src="images/norway-flag.svg" alt="NOK" class="h-5">
+        Nok
+      </div>
+      <button class="hidden md:block px-6 py-1.5 rounded-[54px] border-none bg-[#BF8079] font-medium text-lg text-white cursor-pointer hover:bg-[#a87068] transition-colors">
+        Book an Appointment
+      </button>
+    </div>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="md:hidden cursor-pointer bg-transparent border-none text-2xl text-[#1E1E1E]">
+      ☰
+    </button>
+  </div>
+</header>
+
+<!-- ============================================== -->
+<!-- MAIN CONTENT SECTION -->
+<!-- ============================================== -->
+<main>
+
+<!-- ============================================== -->
+<!-- HERO SECTION (Tailwind CSS) -->
+<!-- ============================================== -->
+  <section id="hero-section" class="bg-gradient-to-b from-white/80 to-[#EAD3CA] flex justify-center lg:h-[710px]">
+    <div class="w-full max-w-[1000px] pt-12 flex flex-col gap-9 px-4">
+      <!-- Hero Text Section -->
+      <div class="flex flex-col gap-6">
+        <h2 class="font-['OV_Soge'] font-semibold text-5xl leading-none text-center text-[#A35D55] m-0">
+          Psykiater Online
+        </h2>
+        <p class="font-['Uncut_Sans'] font-normal text-xl leading-none text-center text-[#333333]">
+          We perform clinical evaluations, diagnostic assessments, and offer treatment for a wide
+          range of mental health and addiction conditions. You can access us online, by phone, or in person.
+        </p>
+        
+        <!-- Search Bar -->
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-[650px]">
+            <input 
+              type="text" 
+              placeholder="Search for symptoms"
+              class="w-full h-12 bg-white rounded-md border-none shadow-[0px_0px_20px_0px_#0000001A] px-8 py-2.5 text-base placeholder:text-[#C6C6C6] font-['Uncut_Sans']"
+            >
+            <img 
+              src="images/hero-search-icon.svg" 
+              alt="search"
+              class="absolute right-4 top-1/2 -translate-y-1/2 w-7 h-7"
+            >
+          </div>
+        </div>
+        
+        <!-- Hero Icon List -->
+        <div class="flex flex-wrap gap-3 justify-center">
+          <div class="flex items-center gap-2.5">
+            <img src="images/hero-icon.svg" alt="icon" class="w-5">
+            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Experienced psychiatrist</p>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <img src="images/hero-icon.svg" alt="icon" class="w-5">
+            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Easy online ordering</p>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <img src="images/hero-icon.svg" alt="icon" class="w-5">
+            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">Short waiting time</p>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <img src="images/hero-icon.svg" alt="icon" class="w-5">
+            <p class="font-['Uncut_Sans'] font-medium text-lg text-[#333333]">No referral</p>
+          </div>
+        </div>
+        
+        <!-- Hero Buttons -->
+        <div class="flex flex-wrap gap-4 justify-center">
+          <button class="px-6 py-3.5 rounded-[54px] border-none bg-[#BF8079] font-['Uncut_Sans'] font-medium text-lg text-white cursor-pointer hover:bg-[#a87068] transition-colors">
+            Meeting in Oslo & Skiing
+          </button>
+          <button class="px-6 py-3.5 rounded-[54px] border-none bg-[#97B099] font-['Uncut_Sans'] font-medium text-lg text-white cursor-pointer hover:bg-[#859a88] transition-colors">
+            Video consultation
+          </button>
+        </div>
+      </div>
+      
+      <!-- Hero Image -->
+      <img 
+        src="images/hero-img.jpg" 
+        alt="Hero" 
+        class="w-full max-w-[1000px] h-[430px] rounded-xl object-cover"
+      >
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- MARQUEE SECTION -->
+<!-- ============================================== -->
+  <section id="marquee-section">
+    <div class="marquee-content">
+      <span><a href="#">Psykiater.no</a> er en av Norges ledende private psykiatriske klinikker, som tilbyr behandling
+        over hele landet gjennom fysiske klinikker og videokonsultasjoner.</span>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- WHO SECTION -->
+<!-- ============================================== -->
+  <section id="who">
+    <div class="section-content who">
+      <div class="who-text">
+        <div class="who-we-are">
+          <h3>Who We Are?</h3>
+        </div>
+        <h4>Psykiater.no is a private psychiatric clinic offering fast access to psychiatrists, psychologists, and
+          specialists in addiction medicine. We help individuals, companies, non-profits, and public sector clients.
+          We provide flexible care through secure video or telephone consultations, as well as in-person visits in
+          Oslo and Ski.</h4>
+      </div>
+      <div class="service-tags">
+        <div class="service-tag">
+          <img src="images/service-tag-icon (2).svg" alt="">
+          <p>Private individuals</p>
+        </div>
+        <div class="service-tag">
+          <img src="images/service-tag-icon (3).svg" alt="">
+          <p>Companies</p>
+        </div>
+        <div class="service-tag">
+          <img src="images/service-tag-icon (4).svg" alt="">
+          <p>Non-profit organizations</p>
+        </div>
+        <div class="service-tag">
+          <img src="images/service-tag-icon (1).svg" alt="">
+          <p>The public sector</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- SUPPORT SECTION -->
+<!-- ============================================== -->
+  <section id="support-section">
+    <div class="section-content support">
+      <div class="tabs">
+        <button class="tab active" onclick="showTab(0)">Mental Health Disorder</button>
+        <button class="tab" onclick="showTab(1)">Addiction & Substance Use</button>
+        <button class="tab" onclick="showTab(2)">Therapy</button>
+      </div>
+
+
+      <div class="tab-content active">
+        <div class="tabs-contents">
+          <div class="tab-content-text">
+            <h3>Explore support for:</h3>
+            <div class="pills">
+              <div class="pill">ADHD</div>
+              <div class="pill">ADD</div>
+              <div class="pill">Anxiety</div>
+              <div class="pill">Depression</div>
+              <div class="pill">Bipolar disorder</div>
+              <div class="pill">Insomnia and sleep difficulties</div>
+              <div class="pill">Eating Disorder</div>
+              <div class="pill">Personality disorders</div>
+              <div class="pill">Psychosis</div>
+              <div class="pill">PTSD</div>
+              <div class="pill">OCD and Obsessive Thoughts</div>
+              <div class="pill">Burnout & exhaustion</div>
+            </div>
+          </div>
+          <img src="images/support-tab-img.jpg" alt="">
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tabs-contents">
+          <div class="tab-content-text">
+            <h3>Explore support for:</h3>
+            <div class="pills">
+              <div class="pill">ADHD</div>
+              <div class="pill">Personality disorders</div>
+              <div class="pill">Psychosis</div>
+              <div class="pill">PTSD</div>
+              <div class="pill">OCD and Obsessive Thoughts</div>
+              <div class="pill">Burnout & exhaustion</div>
+              <div class="pill">ADD</div>
+              <div class="pill">Anxiety</div>
+              <div class="pill">Depression</div>
+              <div class="pill">Bipolar disorder</div>
+              <div class="pill">Insomnia and sleep difficulties</div>
+              <div class="pill">Eating Disorder</div>
+            </div>
+          </div>
+          <img src="images/support-tab-img-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tabs-contents">
+          <div class="tab-content-text">
+            <h3>Explore support for:</h3>
+            <div class="pills">
+              <div class="pill">ADHD</div>
+              <div class="pill">ADD</div>
+              <div class="pill">Anxiety</div>
+              <div class="pill">Depression</div>
+              <div class="pill">Bipolar disorder</div>
+              <div class="pill">Insomnia and sleep difficulties</div>
+              <div class="pill">Eating Disorder</div>
+              <div class="pill">Personality disorders</div>
+              <div class="pill">Psychosis</div>
+              <div class="pill">PTSD</div>
+              <div class="pill">OCD and Obsessive Thoughts</div>
+              <div class="pill">Burnout & exhaustion</div>
+            </div>
+          </div>
+          <img src="images/support-tab-img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- BOOKING SECTION -->
+<!-- ============================================== -->
+  <section id="booking-section">
+    <div class="section-content booking">
+      <div class="booking-cards">
+        <div class="booking-card">
+          <img src="images/booking-icon (1).svg" alt="">
+          <h3>Book an Appointment</h3>
+          <p>Online booking with preferred format</p>
+        </div>
+        <div class="booking-card">
+          <img src="images/booking-icon (1).svg" alt="">
+          <h3>Consult a Specialist</h3>
+          <p>Video, phone, or in-person</p>
+        </div>
+        <div class="booking-card">
+          <img src="images/booking-icon (1).svg" alt="">
+          <h3>Receive Care & Follow-Up</h3>
+          <p>Personalised plan and continued support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- MISSION SECTION -->
+<!-- ============================================== -->
+  <section id="mission-section">
+    <div class="section-content mission">
+      <div class="mission-text">Mission Statement</div>
+      <h4>Founded on the principle that mental health care should be as accessible as any other medical service.
+        Psykiater.no was created to bridge the gap between those seeking help and the specialists who can provide it.
+        The traditional mental health services often involve long waiting times, complex referral processes, and
+        limited options. Our mission is simple: provide fast access to board-certified psychiatrists and addiction
+        specialists through flexible, modern service delivery</h4>
+      <img src="images/mission-svg.svg">
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- TOGETHER SECTION -->
+<!-- ============================================== -->
+  <section id="together-section">
+    <div class="section-content together">
+      <img class="together-img" src="images/togethe-img.jpg" alt="">
+      <div class="together-text">
+        <h2>What can we do together?</h2>
+        <p>We offer treatment to patients struggling with all types of mental illnesses and addiction disorders. Our
+          offering extends beyond the usual services, and we provide follow-up both before and after treatment at our
+          clinics for those who wish it with our psychiatrist. We use clinically tested techniques with the goal of
+          increasing the patient's quality of life.</p>
+        <div class="together-icon-list">
+          <div class="together-icon">
+            <img src="images/together-icon.svg" alt="">
+            <span>Relieve symptoms</span>
+          </div>
+          <div class="together-icon">
+            <img src="images/together-icon.svg" alt="">
+            <span>Overcoming fear</span>
+          </div>
+          <div class="together-icon">
+            <img src="images/together-icon.svg" alt="">
+            <span>Overcoming addiction</span>
+          </div>
+          <div class="together-icon">
+            <img src="images/together-icon.svg" alt="">
+            <span>Better mental health</span>
+          </div>
+          <div class="together-icon">
+            <img src="images/together-icon.svg" alt="">
+            <span>Improve your quality of life</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- SPECIALIST SECTION -->
+<!-- ============================================== -->
+  <section id="specialist-section">
+    <div class="section-content specialist">
+      <div class="profile-1">
+        <h3>Rehan Bin Nawaz</h3>
+        <div class="profile-icon-list">
+          <span>See more</span>
+          <img src="images/specialist-icon.svg" alt="">
+        </div>
+      </div>
+      <div class="meet">
+        <h3>Meet Our Specialist</h3>
+        <span>Our specialist bring years of clinical expertise & a patient-first approach to support your mental
+          wellness</span>
+      </div>
+      <div class="profile-2">
+        <h3>Hammad Khan</h3>
+        <div class="profile-icon-list">
+          <span>See more</span>
+          <img src="images/specialist-icon.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- ORDER SECTION -->
+<!-- ============================================== -->
+  <section id="order-section">
+    <div class="section-content order">
+      <h2>Easy and fast ordering - Short waiting time</h2>
+
+
+      <div class="order-tabs">
+        <div class="steps">
+          <div class="step active" onclick="showStep(0)">Book an Appointment</div>
+          <div class="step" onclick="showStep(1)">Receive Documentation</div>
+          <div class="step" onclick="showStep(2)">Pay for the Hour</div>
+        </div>
+        <div class="steps-content">
+          <div class="step-content active">
+            <img src="images/step-content-img.svg" alt="">
+            <p>Simply click on "book an appointment" at the top of the page or in the bottom right corner and select a
+              consultation with a psychiatrist or specialist in substance abuse and addiction medicine.</p>
+          </div>
+          <div class="step-content">
+            <img src="images/step-content-img.svg" alt="">
+            <p>After booking, you will receive necessary documentation and confirmation details.</p>
+          </div>
+          <div class="step-content">
+            <img src="images/step-content-img.svg" alt="">
+            <p>Complete your payment securely to confirm your consultation slot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- LOCATION SECTION -->
+<!-- ============================================== -->
+  <section id="location-section">
+    <div class="section-content location">
+      <div class="location-text">
+        <h2>Locations & Accessibility</h2>
+        <p>We offer confidential online psychiatric consultations nationwide in Norway, plus in-person services</p>
+        <div class="clinics">
+          <div class="clinic">
+            <img src="images/location-icon.svg" alt="">
+            <span>CLinic in Oslo</span>
+          </div>
+          <div class="clinic">
+            <img src="images/location-icon.svg" alt="">
+            <span>CLinic in Ski</span>
+          </div>
+        </div>
+        <div class="location-icon-lists">
+          <div class="location-icon-list">
+            <img src="images/hero-icon.svg" alt="">
+            <span>Same-week appointments available</span>
+          </div>
+          <div class="location-icon-list">
+            <img src="images/hero-icon.svg" alt="">
+            <span>Online or in-person options</span>
+          </div>
+          <div class="location-icon-list">
+            <img src="images/hero-icon.svg" alt="">
+            <span>Compassionate, experienced specialists</span>
+          </div>
+        </div>
+        <div class="location-btns">
+          <button class="primary-btn">Book an Appointment</button>
+          <button class="secondary-btn">Call us now</button>
+        </div>
+      </div>
+      <img class="loc-img" src="images/location-img.svg" alt="">
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- APPOINTMENT SECTION -->
+<!-- ============================================== -->
+  <section id="appointment-section">
+    <div class="section-content appointment">
+      <h2>Book an Appointment & Check Prices</h2>
+      <div class="appoint-cards">
+        <div class="appoint-card">
+          <img src="images/appoint-img (1).jpg" alt="">
+          <div class="appoint-card-text">
+            <h3>Student Consultation</h3>
+            <p>An introductory call to help you understand psykiater.no clinics and determine if our treatments are
+              right for you.</p>
+          </div>
+          <div class="appoint-card-price">
+            <div class="card-price">
+              <div class="min">Video 45 min</div>
+              <div class="price-icon-list">
+                <span>1750,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card-price">
+              <div class="min">Video 90 min</div>
+              <div class="price-icon-list">
+                <span>2100,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card-price">
+              <div class="min">Oppmøte 45 min</div>
+              <div class="price-icon-list">
+                <span>3250,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card-price">
+              <div class="min">Oppmøte 90 min</div>
+              <div class="price-icon-list">
+                <span>3600,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="appoint-card">
+          <img src="images/appoint-img (2).jpg" alt="">
+          <div class="appoint-card-text">
+            <h3>Video consultation</h3>
+            <p>A secure online consultation offering the same professional care and confidentiality as an in-person
+              visit.</p>
+          </div>
+          <div class="appoint-card-price acp">
+            <div class="card-price-2">
+              <div class="min">Video 45 min</div>
+              <div class="price-icon-list">
+                <span>2250,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card-price-2">
+              <div class="min">Video 90 min</div>
+              <div class="price-icon-list">
+                <span>4250,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="appoint-card">
+          <img src="images/appoint-img (3).jpg" alt="">
+          <div class="appoint-card-text">
+            <h3>In-Clinic Consultation (Oslo or Ski)</h3>
+            <p>A face-to-face consultation providing comprehensive assessment, treatment planning, and professional
+              guidance tailored to your needs.</p>
+          </div>
+          <div class="appoint-card-price acp">
+            <div class="card-price-2">
+              <div class="min">Oppmøte 45 min</div>
+              <div class="price-icon-list">
+                <span>3250,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card-price-2">
+              <div class="min">Oppmøte 90 min</div>
+              <div class="price-icon-list">
+                <span>3600,- NOK</span>
+                <img src="images/appoint-icon.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="appoint-btn">
+        <button class="primary-btn">See our Prices</button>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- FAQ SECTION -->
+<!-- ============================================== -->
+  <section id="faq-section">
+    <div class="faq-section-content">
+      <div class="section-text">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here you can find all the help and answers you need for your mental health in one place.</p>
+      </div>
+
+      <!-- FAQ Grid -->
+      <div class="faq-grid">
+
+        <!-- FAQ Item -->
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What is the difference between a psychologist vs psychiatrist?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-content">
+            <p>Psychiatrists are medical doctors who can prescribe medications, perform medical procedures, and
+              provide a wide range of treatments, including psychotherapy.<br>
+              Psychologists typically have doctorates in psychology and specialize in psychotherapy, psychological
+              testing, and the treatment of mental disorders and emotional disorders through behavioral interventions.
+              They cannot prescribe medications, usually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>How do we help you?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-content">
+            <p>We recommend starting with both to capture immediate demand while building long-term equity.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Our expert psychiatrist for you?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-content">
+            <p>Yes, we provide high-intent content tailored for both users and search engines.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Should I see a psychologist or psychiatrist?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-content">
+            <p>While we specialize in the US market, we work with global brands looking to scale in America.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Can you see a psychiatrist without a referral?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-content">
+            <p>Email handles the retention and conversion of the traffic driven by SEO and PPC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================== -->
+<!-- ARTICLE SECTION -->
+<!-- ============================================== -->
+  <section id="article-section">
+    <div class="section-content articles">
+      <h2>Articles & Resources</h2>
+      <div class="blogs">
+        <div class="blog">
+          <img src="images/blog-img (1).jpg" alt="">
+          <div class="blog-text">
+            <div class="blog-meta">
+              <span>April 15, 2025</span>
+              <span>5 min read</span>
+            </div>
+            <h3>Depression and postpartum psychosis</h3>
+            <hr>
+            <p>Sheikh Hamza Karamali reviews the position of the four schools of law when it comes to calculating the
+              start and end of Ramadan....</p>
+          </div>
+          <div class="blog-btn">
+            <button>Les mer</button>
+          </div>
+        </div>
+
+        <div class="blog">
+          <img src="images/blog-img (2).jpg" alt="">
+          <div class="blog-text">
+            <div class="blog-meta">
+              <span>April 15, 2025</span>
+              <span>5 min read</span>
+            </div>
+            <h3>Cognitive behavioral therapy and self-help</h3>
+            <hr>
+            <p>Sheikh Hamza Karamali reviews the position of the four schools of law when it comes to calculating the
+              start and end of Ramadan....</p>
+          </div>
+          <div class="blog-btn">
+            <button>Les mer</button>
+          </div>
+        </div>
+
+        <div class="blog">
+          <img src="images/blog-img (3).jpg" alt="">
+          <div class="blog-text">
+            <div class="blog-meta">
+              <span>April 15, 2025</span>
+              <span>5 min read</span>
+            </div>
+            <h3>Relationships and mental health</h3>
+            <hr>
+            <p>Sheikh Hamza Karamali reviews the position of the four schools of law when it comes to calculating the
+              start and end of Ramadan....</p>
+          </div>
+          <div class="blog-btn">
+            <button>Les mer</button>
+          </div>
+        </div>
+      </div>
+      <div class="article-btn">
+        <button class="primary-btn">See more articles</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================== -->
+<!-- FOOTER SECTION -->
+<!-- ============================================== -->
+<footer id="footer-section">
+  <div class="section-content footer">
+    <div class="footer-contact-section">
+      <div class="contact-bar">
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (1).svg" alt="">
+          <span>Åsenveien 1, 1400 Ski</span>
+        </div>
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (2).svg" alt="">
+          <span>96 04 44 44</span>
+        </div>
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (3).svg" alt="">
+          <span>hei@psykiater.no</span>
+        </div>
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (1).svg" alt="">
+          <span>Digipost</span>
+        </div>
+      </div>
+      <div class="contact-bar">
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (1).svg" alt="">
+          <span>Åsenveien 1, 1400 Ski</span>
+        </div>
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (2).svg" alt="">
+          <span>96 04 44 44</span>
+        </div>
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (3).svg" alt="">
+          <span>hei@psykiater.no</span>
+        </div>
+        <div class="contact-box">
+          <img src="images/footer-contact-bar-icon (1).svg" alt="">
+          <span>Digipost</span>
+        </div>
+      </div>
+      <hr class="contact-bar-hr">
+    </div>
+    <div class="footer-details-section">
+      <div class="detail-section">
+        <p>Psykiater.no , lege og spesialist i avhengighetsmedisin</p>
+        <span>Org no: 912 875 083</span>
+        <p>Våre leger og spesialister er medlemmer av Den norske legeforening</p>
+        <img src="images/footer-logo.svg" alt="">
+      </div>
+      <div class="link-section">
+        <div class="link-1">
+          <h3>lenker</h3>
+          <ul>
+            <li>Hjem</li>
+            <li>Om oss</li>
+            <li>Kontakt</li>
+            <li>Artikler</li>
+          </ul>
+        </div>
+
+        <div class="klinkker">
+          <h3>Klinkker</h3>
+            <div class="klink-list">
+              <span>Oslo</span>
+              <img src="images/klinkker-icon.svg" alt="">
+            </div>
+            <div class="klink-list">
+              <span>Ski</span>
+              <img src="images/klinkker-icon.svg" alt="">
+            </div>
+        </div>
+
+        <div class="presence">
+          <h3>Our Presence</h3>
+          <div class="presence-list">
+            <img src="images/denmark-flag.svg" alt="">
+            <span>Psykiater Denmark</span>
+          </div>
+          <div class="presence-list">
+            <img src="images/sweden-flag.svg" alt="">
+            <span>Psykiatriker Sweden</span>
+          </div>
+        </div>
+        <div class="find-us">
+          <h3>Find us on</h3>
+          <div class="social-icons">
+            <img src="images/Pinterest.svg" alt="">
+            <img src="images/TwitterX.svg" alt="">
+            <img src="images/facebook.svg" alt="">
+            <img src="images/Instagram.svg" alt="">
+          </div>
+          <h3>Newsletter</h3>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email">
+            <button type="submit"><img src="images/footer-input-btn-icon.svg"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright-bar">
+    <div class="section-content copyright-bar">
+      <span>© 2020-2026 Psykiater.no</span>
+      <span>Designet og udviklet av <a href="#">SYSINN</a></span>
+      <div class="copyright-links">
+        <a href="#">Personvern</a>
+        <a href="#">Sitekart</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
