@@ -11,6 +11,16 @@
   --color-main: #BF8079;
 }
 
+/* Marquee scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Custom base styles */
 @layer base {
   
