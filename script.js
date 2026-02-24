@@ -17,31 +17,53 @@ function showTab(index) {
 }
 
 // FAQ Accordion functionality
-document.querySelectorAll('#faq-section .border-b').forEach(faqItem => {
-  const button = faqItem.querySelector('button');
-  const content = faqItem.querySelector('.max-h-0');
-  const icon = faqItem.querySelector('.text-\\[\\#30px\\]');
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all FAQ items by looking for divs with the specific styling
+  const allDivs = document.querySelectorAll('div.border-b');
+  const faqItems = [];
   
-  button.addEventListener('click', () => {
-    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+  allDivs.forEach(div => {
+    const className = div.getAttribute('class') || '';
+    if (className.includes('border-gray-200') && className.includes('bg-[')) {
+      faqItems.push(div);
+    }
+  });
+  
+  console.log('Found FAQ items:', faqItems.length);
+  
+  faqItems.forEach(faqItem => {
+    const button = faqItem.querySelector('button');
+    const content = faqItem.querySelector('.max-h-0');
     
-    // Close all other FAQ items
-    document.querySelectorAll('#faq-section .border-b').forEach(otherItem => {
-      if (otherItem !== faqItem) {
-        const otherContent = otherItem.querySelector('.max-h-0');
-        const otherIcon = otherItem.querySelector('.text-\\[\\#30px\\]');
-        otherContent.style.maxHeight = '0';
-        otherIcon.textContent = '+';
-      }
-    });
-    
-    // Toggle current item
-    if (isOpen) {
-      content.style.maxHeight = '0';
-      icon.textContent = '+';
-    } else {
-      content.style.maxHeight = content.scrollHeight + 'px';
-      icon.textContent = '−';
+    if (button && content) {
+      const iconDiv = button.querySelector('div');
+      console.log('Button:', button, 'Content:', content, 'Icon:', iconDiv);
+      
+      button.addEventListener('click', function() {
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+        
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== faqItem) {
+            const otherContent = otherItem.querySelector('.max-h-0');
+            const otherButton = otherItem.querySelector('button');
+            if (otherContent) otherContent.style.maxHeight = '0';
+            if (otherButton) {
+              const otherIcon = otherButton.querySelector('div');
+              if (otherIcon) otherIcon.textContent = '+';
+            }
+          }
+        });
+        
+        // Toggle current item
+        if (isOpen) {
+          content.style.maxHeight = '0';
+          if (iconDiv) iconDiv.textContent = '+';
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          if (iconDiv) iconDiv.textContent = '−';
+        }
+      });
     }
   });
 });
