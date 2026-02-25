@@ -440,7 +440,7 @@
   <section id="together-section" class="bg-gradient-to-b from-[#FFE8E6] to-white py-16 lg:py-24">
     <div class="max-w-[1260px] mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <img class="w-full max-w-md lg:max-w-lg xl:max-w-xl mx-auto h-[483px] rounded-xl object-cover" src="images/togethe-img.jpg" alt="" >
+        <img class="w-full max-w-md lg:max-w-lg xl:max-w-xl mx-auto h-[553px] rounded-xl object-cover" src="images/togethe-img.jpg" alt="" >
         <div class="flex flex-col gap-[25px] p-[25px] rounded-[10px] bg-white shadow-[0px_0px_5px_0px_#0000000D]">
           <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55]">What can we do together?</h2>
           <p class="font-['Uncut_Sans'] font-normal text-[20px] leading-[27px] text-[#333333] max-w-xl">We offer treatment to patients struggling with all types of mental illnesses and addiction disorders. Our
@@ -513,13 +513,13 @@
 <section id="order-section" class="py-16 lg:py-24">
   <div class="max-w-[1260px] mx-auto px-6 lg:px-8">
     <h2 class="font-['OV_Soge'] font-semibold text-[40px] leading-none text-[#A35D55] mb-12">Easy and fast ordering - Short waiting time</h2>
-    <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-      <div class="flex flex-col gap-[60px]">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div class="flex flex-col gap-[60px] order-2 lg:order-1">
         <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(0)">Book an Appointment</div>
         <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(1)">Receive Documentation</div>
         <div class="step cursor-pointer relative transition-all duration-300 font-['OV_Soge'] font-semibold text-2xl leading-none text-[#C8D2C9]" onclick="showStep(2)">Pay for the Hour</div>
       </div>
-      <div class="steps-content">
+<div class="steps-content order-1 lg:order-2">
         <div class="step-content p-5 w-full max-w-[470px]">
           <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
           <p class="font-['Uncut_Sans'] font-normal text-lg text-[#333333] max-w-xl">Simply click on "book an appointment" at the top of the page or in the bottom right corner and select a
@@ -538,6 +538,50 @@
   </div>
 </section>
 
+<!-- <section id="order-section" class="py-12 lg:py-24">
+  <div class="max-w-[1260px] mx-auto px-6 lg:px-8">
+    <h2 class="font-['OV_Soge'] font-semibold text-[32px] lg:text-[40px] leading-tight text-[#A35D55] mb-8 lg:mb-12">
+      Easy and fast ordering - <br class="sm:hidden">Short waiting time
+    </h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-y-[60px] lg:gap-x-24 items-start relative">
+      
+      <div class="step cursor-pointer transition-all duration-300 font-['OV_Soge'] font-semibold text-[26px] lg:text-2xl leading-none text-[#80AB85] lg:text-[#C8D2C9] active-step-color lg:col-start-1 lg:row-start-1" onclick="showStep(0)">
+        Book an Appointment
+      </div>
+      
+      <div class="step-content w-full max-w-[470px] lg:col-start-2 lg:row-start-1 lg:row-span-3">
+        <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-4 lg:mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
+        <p class="font-['Uncut_Sans'] font-normal text-[15px] lg:text-lg text-[#333333] max-w-xl leading-relaxed">
+          Simply click on "book an appointment" at the top of the page or in the bottom right corner and select a consultation with a psychiatrist or specialist in substance abuse and addiction medicine.
+        </p>
+      </div>
+
+      <div class="step cursor-pointer transition-all duration-300 font-['OV_Soge'] font-semibold text-[26px] lg:text-2xl leading-none text-[#C8D2C9] lg:col-start-1 lg:row-start-2" onclick="showStep(1)">
+        Receive documentation
+      </div>
+      
+      <div class="step-content hidden w-full max-w-[470px] lg:col-start-2 lg:row-start-1 lg:row-span-3">
+        <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-4 lg:mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
+        <p class="font-['Uncut_Sans'] font-normal text-[15px] lg:text-lg text-[#333333] max-w-xl leading-relaxed">
+          After booking, you will receive necessary documentation and confirmation details.
+        </p>
+      </div>
+
+      <div class="step cursor-pointer transition-all duration-300 font-['OV_Soge'] font-semibold text-[26px] lg:text-2xl leading-none text-[#C8D2C9] lg:col-start-1 lg:row-start-3" onclick="showStep(2)">
+        Pay for the hour
+      </div>
+      
+      <div class="step-content hidden w-full max-w-[470px] lg:col-start-2 lg:row-start-1 lg:row-span-3">
+        <img src="images/step-content-img.svg" alt="" class="w-full h-auto mb-4 lg:mb-5 max-w-md lg:max-w-lg xl:max-w-xl">
+        <p class="font-['Uncut_Sans'] font-normal text-[15px] lg:text-lg text-[#333333] max-w-xl leading-relaxed">
+          Complete your payment securely to confirm your consultation slot.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section> -->
 <!-- ============================================== -->
 <!-- LOCATION SECTION -->
 <!-- ============================================== -->
